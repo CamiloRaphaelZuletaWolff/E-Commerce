@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" href="/css/styleProducto.css">
+    <style>
+        .btn-detalle, .btn-agregar {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+        }
+
+        .btn-detalle:hover, .btn-agregar:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navber">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="/imagenes/car.svg" id="img-carrito" alt="carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>                                
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section class="productos container">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+    
+            <!-- Nuevos productos con las imágenes proporcionadas -->
+            <div class="producto">
+                <img src="/imagenes/CarnYucArrQso.jpeg" alt="Carne con arros y queso">
+                <h3>Carne con arros y queso</h3>
+                <p>$25.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    
+            <div class="producto">
+                <img src="/imagenes/Lechon.jpeg" alt="Lechón">
+                <h3>Lechón</h3>
+                <p>$30.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    
+            <div class="producto">
+                <img src="/imagenes/Majao.jpeg" alt="Majao">
+                <h3>Majao</h3>
+                <p>$18.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    
+            <div class="producto">
+                <img src="/imagenes/Piquemacho.jpeg" alt="Pique Macho">
+                <h3>Pique Macho</h3>
+                <p>$22.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    
+            <div class="producto">
+                <img src="/imagenes/Pollofrito.jpeg" alt="Pollo Frito">
+                <h3>Pollo Frito</h3>
+                <p>$15.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    
+    
+            <div class="producto">
+                <img src="/imagenes/Silpancho.jpeg" alt="Silpancho">
+                <h3>Silpancho</h3>
+                <p>$20.00</p>
+                <div class="botones">
+                    <button class="btn-detalle">Ver Detalles</button>
+                    <button class="btn-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.btn-agregar').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Producto agregado al carrito');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
