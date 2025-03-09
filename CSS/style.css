@@ -58,6 +58,10 @@ img{
     text-transform: uppercase;
     font-weight: 800;
 }
+.logo:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
 
 .menu .navber ul li{
     position: relative;
@@ -69,6 +73,10 @@ img{
     padding: 20px;
     color: #111111;
     display: block;
+}
+.menu .navber ul li a:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
 }
 #menu{
     display: none;
@@ -130,6 +138,10 @@ th, td{
     flex-basis: 50%;
     text-align: center;
 }
+.header-img:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
 
 .header-txt{
     flex-basis: 50%;
@@ -143,6 +155,10 @@ th, td{
     color: #111111;
     font-family: 'Oswald', sens-serif;
     margin-bottom: 15px;
+}
+.header-txt h1:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
 }
 
 .header-txt p{
@@ -159,6 +175,11 @@ th, td{
     border-radius: 5px;
 }
 
+.btn-1:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
 .ofert{
     padding: 20px 0 0 0;
     display: flex;
@@ -172,6 +193,12 @@ th, td{
     background-color: #f5f5f5;
     padding: 35px;
 }
+
+.ofert-1:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
+
 .ofert-img{
     flex-basis: 50%;
     margin-right: 15px;
@@ -202,6 +229,10 @@ th, td{
     border-radius: 5px;
     font-size: 15px;
 }
+.btn-2:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
 
 
 .products{
@@ -228,11 +259,16 @@ th, td{
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0,0, 0.1);
 }
+.product:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+}
 
 .product img{
     width: 250px;
-    height: 370px;
+    height: 250px;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .product h3{
@@ -252,3 +288,57 @@ th, td{
 .precio{
     font-weight: 800;
 }
+
+.blog{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+
+.blog-1{
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 img{
+    margin-bottom: 20px;
+}
+
+.blog-1 h3{
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.blog-1 p{
+    font-size: 16px;
+    color: #111111;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #111111;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size:  18px;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #DCDCDC;
+    display: block;
+    margin-bottom: 10px;
+}
+
