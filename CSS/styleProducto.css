@@ -1,0 +1,262 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f5f5f5;
+    padding: 70px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #111111;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.menu .navber ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navber ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4e4e4e;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #FFFFFF;
+}
+
+.borrar {
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+}
+
+.header-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+}
+
+.header-txt p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+/* Estilos para los productos */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2 {
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.product {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animación */
+}
+
+.product img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra al hacer hover */
+}
+
+.product h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 16px;
+    color: #111111;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos para los botones */
+.btn-detalle, .btn-agregar {
+    padding: 10px 20px;
+    border: 2px solid #111111; /* Borde negro */
+    background-color: #111111; /* Fondo negro */
+    color: #FFFFFF; /* Texto blanco */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Efecto de hover para los botones */
+.btn-detalle:hover, .btn-agregar:hover {
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #111111; /* Texto negro */
+}
+
