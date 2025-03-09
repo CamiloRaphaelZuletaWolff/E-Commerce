@@ -3,6 +3,9 @@
 /*Fonts 
 Oswald
 Poppins */
+html {
+    scroll-behavior: smooth; /* Aplica el desplazamiento suave en toda la página */
+}
 
 *{
     margin: 0;
